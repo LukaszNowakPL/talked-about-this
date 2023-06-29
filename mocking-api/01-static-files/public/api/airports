@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Wrocław Airport",
+    "iata": "WRO",
+    "cities": "Wrocław",
+    "country_id": 1
+  },
+  {
+    "id": 2,
+    "name": "Warsaw Chopin",
+    "iata": "WAW",
+    "cities": "Warszawa",
+    "country_id": 1
+  },
+  {
+    "id": 3,
+    "name": "Warsaw Modlin",
+    "iata": "WMI",
+    "cities": "Warszawa",
+    "country_id": 1
+  },
+  {
+    "id": 4,
+    "name": "Lotnisko Radom",
+    "iata": "RDO",
+    "cities": "Radom, Warszawa, Kielce",
+    "country_id": 1
+  },
+  {
+    "id": 11,
+    "name": "Barcelona El-Prat",
+    "iata": "BCN",
+    "cities": "Barcelona",
+    "country_id": 2
+  },
+  {
+    "id": 12,
+    "name": "Palma Mallorca",
+    "iata": "PMI",
+    "cities": "Mallorca Island",
+    "country_id": 2
+  },
+  {
+    "id": 13,
+    "name": "Sevilla",
+    "iata": "SVQ",
+    "cities": "Sevilla",
+    "country_id": 2
+  },
+  {
+    "id": 14,
+    "name": "Tenerife Norte",
+    "iata": "TFN",
+    "cities": "Santa Cruz De Tenerife, Tenerife domestic",
+    "country_id": 2
+  },
+  {
+    "id": 15,
+    "name": "Tenerife Reina Sofia",
+    "iata": "TFS",
+    "cities": "Tenerife Island",
+    "country_id": 2
+  }
+]

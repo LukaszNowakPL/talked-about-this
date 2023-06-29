@@ -1,0 +1,8 @@
+{
+  "id": 3,
+  "name": "Warsaw Modlin",
+  "iata": "WMI",
+  "cities": "Warszawa",
+  "airlines": [4],
+  "services": [4,6]
+}

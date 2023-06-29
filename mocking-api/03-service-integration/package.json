@@ -1,0 +1,16 @@
+{
+  "name": "03-service-integration",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start-backend-service": "npm --prefix ./backend run dev",
+    "start-frontend": "npm --prefix ./frontend run dev",
+    "all-components": "concurrently \"npm run start-backend-service\" \"npm run start-frontend\"",
+    "install-backend-service": "npm --prefix ./backend install",
+    "install-frontend": "npm --prefix ./frontend install",
+    "install-all": "concurrently \"npm run install-backend-service\"  & npm run install-frontend"
+  },
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
+}

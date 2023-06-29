@@ -1,0 +1,10 @@
+node_modules
+# Keep environment variables out of version control
+.env
+
+# Editor files
+.idea
+.vscode
+
+# Production build
+dist

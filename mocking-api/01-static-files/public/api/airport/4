@@ -1,0 +1,8 @@
+{
+  "id": 4,
+  "name": "Lotnisko Radom",
+  "iata": "RDO",
+  "cities": "Radom, Warszawa, Kielce",
+  "airlines": [1],
+  "services": []
+}
