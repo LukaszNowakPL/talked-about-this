@@ -18,9 +18,7 @@ export const CountriesList: React.FC<AirportsListProps> = ({
   );
   return (
     <>
-      <ListItem>
-        <ListSubheader>{country.name}</ListSubheader>
-      </ListItem>
+      <ListSubheader>{country.name}</ListSubheader>
       <Divider />
       <ListItem>
         <AirportsOfCountry airports={airportsByCountry} />

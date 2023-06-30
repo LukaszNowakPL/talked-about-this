@@ -17,7 +17,11 @@ interface FormProviderProps {
 export const FormProvider: React.FC<FormProviderProps> = ({ children }) => {
   const { mutateAsync: addAirport, isLoading, isError } = useAirportAddition();
   const handleSubmit = async (formData: AddAirportForm) => {
-    await addAirport(formData);
+    try {
+      await addAirport(formData);
+    } catch (e) {
+      // errors are handled using isError React-query flag
+    }
   };
 
   return (
@@ -29,7 +33,7 @@ export const FormProvider: React.FC<FormProviderProps> = ({ children }) => {
         </Alert>
       )}
       <Formik initialValues={initialValues} onSubmit={handleSubmit}>
-        <Form data-test-id={'add-airport-form'}>
+        <Form data-test-id={"add-airport-form"}>
           <TableContainer>
             <Table>
               <TableBody>{children}</TableBody>

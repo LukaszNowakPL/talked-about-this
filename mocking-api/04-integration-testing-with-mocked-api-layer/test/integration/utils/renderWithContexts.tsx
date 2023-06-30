@@ -71,6 +71,11 @@ const wrapWithReactQuery = (ui: ReactElement) => {
         retryDelay: 0,
       },
     },
+    logger: {
+      log: console.log,
+      warn: console.warn,
+      error: () => {},
+    },
   });
   client.clear();
   return <QueryClientProvider client={client}>{ui}</QueryClientProvider>;
