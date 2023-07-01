@@ -2,7 +2,11 @@
 
 ## Example explanation
 
-ToDo: Add description
+This example project focuses on mocking api calls during Jest integration tests of React components using `MSW` library.
+
+This approach is almost a copy of previous example. The difference is, that instead of mocking functions from an `api` layer, the api calls are listened and handled by `MSW` library.
+
+Each test case contains own handling settings. The best approach is, when `MSW` handles only expected api calls with accuracy to indicated path params, query params and request body structure. Such approach ensures the way the component communicates with backend services. If some api call triggered during test case has not been handled by `MSW`, there is a proper information being printed into the console.
 
 ## Commands available
 

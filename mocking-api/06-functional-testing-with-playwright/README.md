@@ -2,7 +2,11 @@
 
 ## Example explanation
 
-ToDo: Add description
+This example project focuses on mocking api calls during functional tests of React application using `Playwright`.
+
+The approach to functional tests is very similar to approach to integration tests presented on previous example. The difference is only on tools used, as well as the fact, that `Playwright` tests production bundle of entire application, instead of React component.
+
+Api calls may be mocked with two approaches. Playwright native solution uses `route` function of `page` object. `Mockiavelli` library, however, is used to differentiate handling of GET, POST calls to the same endpoint, and then checking structure of request body.
 
 ## Commands available
 
@@ -17,3 +21,5 @@ ToDo: Add description
 ## Libraries used
 
 [Playwright](https://playwright.dev/) tool for performing e2e and functional testing.
+
+[Mockiavelli](https://www.npmjs.com/package/mockiavelli) HTTP request mocking library for `Playwright` and `Puppeteer`.

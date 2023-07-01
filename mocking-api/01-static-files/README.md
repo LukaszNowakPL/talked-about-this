@@ -2,7 +2,9 @@
 
 ## Example explanation
 
-ToDo: Add description
+This example project mocks api calls by providing static files into publicly available asset folder. For application based on `Vite` or `CRA` it is usually a `/public` folder.
+
+During local development, when application is making an api call, in fact it attempts to fetch an asset. So calling `/api/countries` endpoint will resolve with returning data stored on `/public/api/countries` file.
 
 ## Commands available
 
